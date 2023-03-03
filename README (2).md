@@ -36,6 +36,7 @@ To work with ESP32 variants, we need to add the boards into the IDE. To do this 
 Using jumpers or other temporary wiring, create the diagram as shown below to connect the ESP32CAM to the Arduino Uno for programming.
  
 
+![a761f2a0-7d9f-41ed-866c-db0cb05fdb71](https://user-images.githubusercontent.com/126375429/222659689-277d0180-ea93-479f-9105-745e2e16a6d5.jpg)
 
 
 	Open Camera sample sketch
@@ -56,6 +57,7 @@ Once the ESP32 board is loaded into the IDE, now we can load the sample camera s
 	Programmer: AVR ISP
 	NOTE: This last last option wasn’t available for me and worked without a programmer set. I am leaving it here because it was in the initial instructions
  
+![368f0eed-8045-41e3-9a79-52bfa921e26e](https://user-images.githubusercontent.com/126375429/222659890-9fdd0536-249b-4ea9-ad5e-d07b5497e9d9.jpg)
 
 	Upload sketch
 Once the UNO and ESP32cam are connected and the sketch is ready, we can upload the code.
@@ -77,7 +79,8 @@ To continue using the ESP32 cam, only power is needed to the 5V and GND pins.
 
 
 ## SOFTWARE FUNCTIONS:
- 
+ ![2fb8beb9-1e3a-4015-aa52-a29a3d4c70ab](https://user-images.githubusercontent.com/126375429/222659789-75cfadcb-c028-4ff6-94ae-9381a7c64754.jpg)
+
   
 This is a WI-FI controlled humanoid robot. It can be controlled using a mobile app. This mobile app can be open by entering an IP address (192.168.4.1) on the browser. Sometimes we might have to reconnect the WI-FI if app does not open. There are four buttons that handles the movement of the car left, right, backward and forward. Then there are buttons for the speed and light control. And we also have button PAN and TILT button. This PAN Button will handle the camera movement in left and right direction. However, TILT Button will handle the camera movement in upward and downward direction. The light button will be used to turn the flash light on and off. Moreover we can increase and decrease the intensity of this flash. The speed button can be used to control the speed of video streaming.
 
@@ -88,3 +91,4 @@ This is a WI-FI controlled humanoid robot. It can be controlled using a mobile a
 We are going to make humanoid monitoring robot with pan tilt control. By using this pan tilt assembly we can rotate the camera horizontally and vertically. We can capture images by esp32 camera module and send these images to mobile application using Web socket through Wi-Fi connection. We can control robot by using own Web application. 
 First assemble the pan tilt and fixed servos.  Then assemble the car now. First heat the wire with gear motors. Mount all four motors on car chassis using connecter and screws. Now attach the both car chassis plate using screws. Then we join the red to red and black to black wire on DC motors on each sides. Attach L298N motor module on car chassis and then we make connection. L298Nmotor
 We connect right side motors to out one and out two pin to L298N motor module. Connect left side to out three and out four pin to motor driver module. Then we connect L298N motor to Esp32 cam. Connect both enA and enB pins to IO2 pin ESP camera. We will take +5 volt from L298N motor and provide to Esp32 camera module then fixed Esp32 camera module. Mount pan tilt assembly on car chassis connect pan servo and tilt servo to IO14 and IO15 respectively. Connect UBC to battery supply and provide +5 volt and ground to servos. Attach DC battery power connector to motor driver module. Then we attach wheels to car.
+![704a0a7c-1cda-4686-8ef3-d001c812b849](https://user-images.githubusercontent.com/126375429/222659566-395326b2-bf02-448c-a1b3-5645dcfd61b2.jpg)
